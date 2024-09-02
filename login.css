@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+
+body{
+    min-height:100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body::before{
+    content : '' ;
+    position : absolute;
+    height : 100%;
+    width: 100%;
+    background: url(2151305304.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.login-wrapper{
+    width: 400px;
+    padding: 30px;
+    border : 1px solid rgba(255, 255 , 255, .5);
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    text-align: center;
+
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form h2{
+    font-size: 2rem;
+    color : white;
+    margin-bottom: 20px;
+
+}
+
+.input-field{
+    border-bottom: 2px solid #ccc;
+    position: relative;
+    margin: 15px 0;
+
+}
+
+.input-field input{
+    width:100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color : #fff;
+    font-size: 1rem;
+
+}
+
+.input-field label{
+    position: absolute;
+    top: 50%;
+    left:0;
+    transform: translateY(-50%);
+    color:white;
+    font-size: 1rem;
+    pointer-events: none;
+    transition:.3s ease;
+
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label{
+    transform: translateY(-120%);
+    font-size: .8rem;
+    top:10px;
+}
+
+.password-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#fff;
+    margin: 25px 0 15px 0;
+}
+
+.password-options label{
+    display: flex;
+    align-items: center;
+
+}
+
+#remember{
+    accent-color: #fff;
+
+}
+
+.password-options input p{
+    margin-left: 8px;
+
+}
+
+.login-wrapper a{
+    color : #efefef;
+    text-decoration: none;
+
+}
+
+.login-wrapper a:hover{
+    text-decoration: underline;
+}
+
+button {
+    background-color: #fff;
+    color:#000;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 12px 20px;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    transition: .3s ease;
+
+}
+
+button:hover{
+    background-color: rgba(255, 255 , 255, .15);
+    color: #fff;
+    border-color: #fff;
+}
+
+.account-o{
+    text-align: center;
+    margin-top: 30px;
+    color:white;
+    
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing:border-box;
+
+}
+
+
+body{
+    display: flex;
+    background-image:url(2151305304.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+
+
+.sign-up{
+   width: 400px;
+   padding: 30px;
+   backdrop-filter:blur(8px);
+   border : solid 1px rgba(255,255,255, .5);
+   text-align: center;
+   box-shadow: 0 2px 40px rgb(128, 205, 238);
+}
+form
+{
+    display: flex;
+flex-direction: column;
+}
+form h2{
+    color : #fff;
+    font-size: 1.9em;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+
+form .cin{
+    border-bottom: solid #fff 1px;
+    margin: 15px 0;
+    position: relative;
+
+}
+
+.cin input{
+    background-color: transparent;
+    width : 100%;
+    outline: none;
+    border : none;
+    font-size: 1.2rem;
+color : #fff;
+
+}
+
+.cin label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color:#fff;
+    transform: translateY(-50%);
+    transition : .3s ease;
+    font-size: .9em;
+    pointer-events: none;
+}
+
+.cin input:focus~label,
+.cin input:valid~label{
+    transform: translateY(-130%);
+    top:10px;
+    font-size: .8em;
+}
+.sign-up .password{
+    display: flex;
+justify-content: space-between;
+
+}
+.password .ps{
+    width:45%;
+}
+
+button{
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    border:solid 1px rgb(112, 131, 137);
+    height:40px;
+    font-size: 20px;
+    font-weight: 500;
+transition:.3s ease;
+cursor: pointer;
+margin-top: 10px;
+
+}
+
+button:hover{
+    border-color: #fff;
+    color:#fff;
+background-color: transparent;
+}
+
+
